@@ -1,0 +1,111 @@
+/**
+ * ==============================================================================
+ * AESTHETIC DESIGN SYSTEM TOKENS
+ * ==============================================================================
+ * Warm Cream & Off-White, Deep Charcoal, Muted Sage Green, Soft Lavender
+ * With an elegant editorial Dark Mode
+ * ==============================================================================
+ */
+
+:root {
+  /* Typography */
+  --font-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', Menlo, Consolas, monospace;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-medium: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --max-width: 1200px;
+  --header-height: 80px;
+
+  /* ============================================================================
+     LIGHT PALETTE (Warm Cream, Deep Charcoal, Muted Sage & Soft Lavender)
+     ============================================================================ */
+  --bg-base: #FAF8F5;          /* Warm cream parchment */
+  --bg-surface: #FFFFFF;       /* Crisp paper white */
+  --bg-surface-soft: #F4EFEA;  /* Soft warm ivory */
+  --bg-surface-hover: #EFE9E2;
+  --bg-glass: rgba(250, 248, 245, 0.88);
+
+  /* Deep Charcoal Text */
+  --text-primary: #1C1A18;     /* Deep charcoal */
+  --text-secondary: #5C5751;   /* Warm mid-charcoal */
+  --text-muted: #8F8880;       /* Soft warm stone */
+  --text-inverted: #FAF8F5;
+
+  /* Muted Sage Green Accents */
+  --sage: #6B8B74;             /* Main muted sage */
+  --sage-rgb: 107, 139, 116;
+  --sage-light: #EBF2ED;       /* Soft sage tint */
+  --sage-dark: #46604D;
+
+  /* Soft Lavender Accents */
+  --lavender: #8E7C9D;         /* Main soft lavender */
+  --lavender-rgb: 142, 124, 157;
+  --lavender-light: #F3EFF7;   /* Soft lavender tint */
+  --lavender-dark: #625070;
+
+  /* Delicate Borders & Dividers */
+  --border-color: rgba(28, 26, 24, 0.08);
+  --border-hover: rgba(28, 26, 24, 0.18);
+  --border-active: var(--sage);
+
+  /* Soft Ambient Shadows */
+  --shadow-sm: 0 2px 8px rgba(28, 26, 24, 0.04);
+  --shadow-md: 0 12px 32px -8px rgba(28, 26, 24, 0.06), 0 2px 6px rgba(28, 26, 24, 0.02);
+  --shadow-lg: 0 24px 56px -12px rgba(28, 26, 24, 0.08), 0 4px 12px rgba(28, 26, 24, 0.03);
+  --shadow-hover: 0 20px 40px -10px rgba(107, 139, 116, 0.15);
+
+  /* Grain Texture Opacity */
+  --grain-opacity: 0.035;
+}
+
+/* ============================================================================
+   DARK PALETTE (Rich Obsidian, Warm Espresso, Sage Mist & Twilight Lavender)
+   ============================================================================ */
+[data-theme="dark"] {
+  --bg-base: #121215;          /* Rich espresso obsidian */
+  --bg-surface: #1A1A1F;       /* Warm dark slate card */
+  --bg-surface-soft: #23232A;  /* Soft elevated surface */
+  --bg-surface-hover: #2C2C35;
+  --bg-glass: rgba(18, 18, 21, 0.90);
+
+  --text-primary: #FAF8F5;     /* Soft ivory */
+  --text-secondary: #B0A9A2;   /* Luminous warm gray */
+  --text-muted: #78736D;       /* Deep stone */
+  --text-inverted: #121215;
+
+  /* Luminous Sage in Dark Mode */
+  --sage: #9DBAA5;
+  --sage-rgb: 157, 186, 165;
+  --sage-light: rgba(157, 186, 165, 0.12);
+  --sage-dark: #C5D9CB;
+
+  /* Luminous Lavender in Dark Mode */
+  --lavender: #C2B3D1;
+  --lavender-rgb: 194, 179, 209;
+  --lavender-light: rgba(194, 179, 209, 0.12);
+  --lavender-dark: #E1D6ED;
+
+  --border-color: rgba(250, 248, 245, 0.08);
+  --border-hover: rgba(250, 248, 245, 0.18);
+  --border-active: var(--sage);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 32px -8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 24px 56px -12px rgba(0, 0, 0, 0.65);
+  --shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+
+  --grain-opacity: 0.025;
+}

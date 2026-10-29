@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <title>Ishant Lather — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ishant Lather — B.Tech in Artificial Intelligence & Machine Learning at Rishihood University. Exploring Cybersecurity, Ethical Hacking, Linux, and Creative Tech.">
+  <meta name="author" content="Ishant Lather">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ishant Lather — Portfolio">
+  <meta property="og:description" content="Exploring technology. Building ideas. Creating my own path.">
+
+  <!-- Favicon (Minimalist Botanical Monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B8B74' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'></circle><path d='m8 12 2 2 4-4'></path></svg>">
+
+  <!-- Editorial Google Fonts: Fraunces (Serif) & Plus Jakarta Sans (Modern Sans) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <!-- Film Grain & Ambient Aura Overlays -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow-sage" aria-hidden="true"></div>
+  <div class="ambient-glow-lavender" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="navbar-brand" aria-label="Ishant Lather Home">
+        <span>Ishant Lather</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#into" class="nav-link">What I'm Into</a></li>
+          <li><a href="#work" class="nav-link">Selected Work</a></li>
+          <li><a href="#github" class="nav-link">GitHub</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Trigger) -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Light and Dark Mode">
+          <!-- Populated by JS -->
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-open-btn" aria-label="Open mobile navigation menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-drawer-header">
+      <span class="navbar-brand">Ishant Lather<span class="brand-dot"></span></span>
+      <button type="button" class="mobile-drawer-close" id="mobile-menu-close-btn" aria-label="Close mobile navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#into" class="mobile-nav-link">What I'm Into</a></li>
+      <li><a href="#work" class="mobile-nav-link">Selected Work</a></li>
+      <li><a href="#github" class="mobile-nav-link">GitHub</a></li>
+      <li><a href="#journey" class="mobile-nav-link">Journey</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- =========================================================================
+       2. MAIN CONTENT
+       ========================================================================= -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="pill pill-sage hero-badge-pill">
+              <span class="badge-dot-green"></span>
+              <span>Available for collaboration &amp; learning</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-title">Hey, I'm Ishant.</h1>
+            <p class="hero-subtitle" id="hero-subtitle">Exploring technology. Building ideas. Creating my own path.</p>
+
+            <div class="hero-rotating-bar">
+              <span class="rotating-label">Currently exploring:</span>
+              <span class="rotating-text-wrapper" id="rotating-text-target">Cybersecurity</span>
+            </div>
+
+            <p class="hero-intro" id="hero-intro">
+              <!-- Injected by JS -->
+            </p>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">
+                <span>Explore My World</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Let's Connect</span>
+              </a>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+              <span>Scroll to explore</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Hero Visual Composition (Apple / Studio Portrait Card) -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-art-card">
+              <div class="floating-badge floating-badge-top">
+                <span class="badge-dot-green"></span>
+                <span>B.Tech AI &amp; ML</span>
+              </div>
+
+              <div class="hero-image-frame" id="hero-image-frame">
+                <!-- Injected by JS: Supports profile image or artistic monogram -->
+              </div>
+
+              <div class="floating-badge floating-badge-bottom">
+                <span>Rishihood University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">01 // About Me</div>
+          <h2 class="section-title">A curiosity for systems and security.</h2>
+          <p class="section-subtitle">My journey as a student exploring the intersection of Artificial Intelligence and digital defense.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative" id="about-narrative">
+            <!-- Injected by JS -->
+          </div>
+
+          <aside class="about-specs-card" id="about-specs-container">
+            <!-- Injected by JS -->
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I'M INTO SECTION -->
+    <section class="section" id="into">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">02 // What I'm Into</div>
+          <h2 class="section-title">Focus Areas &amp; Technology</h2>
+          <p class="section-subtitle">The technical disciplines and practical labs I immerse myself in daily.</p>
+        </div>
+
+        <div class="interests-grid" id="interests-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">03 // Selected Work</div>
+          <h2 class="section-title">Projects &amp; Lab Work</h2>
+          <p class="section-subtitle">A curated selection of technical explorations, lab notebooks, and software.</p>
+        </div>
+
+        <div class="projects-masonry" id="projects-masonry">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB SECTION -->
+    <section class="section" id="github">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">04 // Repositories</div>
+          <h2 class="section-title">Public Code on GitHub</h2>
+          <p class="section-subtitle">Live repositories streamed directly from the official GitHub REST API.</p>
+        </div>
+
+        <div class="github-overview-card" id="github-overview-card">
+          <!-- Injected by JS -->
+        </div>
+
+        <div class="repos-cards-grid" id="repos-cards-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MY LEARNING JOURNEY SECTION -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">05 // Progression</div>
+          <h2 class="section-title">My Learning Journey</h2>
+          <p class="section-subtitle">A chronological timeline tracking my technical development across computer science and security.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-spine"></div>
+          <div id="timeline-entries-container">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-container reveal">
+          <div class="section-tag" style="margin-bottom: 1.25rem;">06 // Conversation</div>
+          <h2 class="contact-quote-closing">
+            Good ideas start with a <span>conversation.</span>
+          </h2>
+          <p class="contact-sub-invitation">
+            Whether you want to discuss cybersecurity labs, AI projects, or just exchange ideas, my inbox is always open.
+          </p>
+
+          <div class="contact-links-row" id="contact-links-row">
+            <!-- Injected by JS -->
+          </div>
+
+          <p style="font-size: 0.88rem; color: var(--text-muted); font-family: var(--font-mono);">
+            // Directly connected to authentic developer channels.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       3. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-name-copy">
+        <span class="footer-signature">Ishant Lather</span>
+        <span class="footer-rights" id="footer-rights"></span>
+      </div>
+
+      <div class="footer-socials" id="footer-socials">
+        <!-- Injected by JS -->
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 0.85rem;">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <!-- Populated by JS -->
+        </button>
+        <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top" style="opacity: 0; pointer-events: none;">
+          <!-- Populated by JS -->
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

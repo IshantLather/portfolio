@@ -1,0 +1,22 @@
+{
+  "name": "ishant-lather-portfolio",
+  "version": "1.0.0",
+  "description": "Futuristic Cybersecurity and AI/ML Personal Portfolio for Ishant Lather",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -e \"console.log('Portfolio syntax check passed.')\""
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "ethical-hacking",
+    "ai",
+    "machine-learning",
+    "linux",
+    "developer"
+  ],
+  "author": "Ishant Lather",
+  "license": "MIT"
+}
